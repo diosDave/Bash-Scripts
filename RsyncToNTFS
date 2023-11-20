@@ -1,0 +1,6 @@
+
+#!/bin/sh
+#created 09/28/23
+#Author David Whyte
+rsync --ignore-existing -a /var/spool/asterisk/monitor/ /mnt/ntfs1/CallRecordings/
+echo "Freepbx backup Call Recordings Rsynced To /mnt/NTFS1 has completed and call recordings have been synced." | mail -s "Freepbx Rsync To /mnt/NTFS1" david.whyte@qcsdirect.com
